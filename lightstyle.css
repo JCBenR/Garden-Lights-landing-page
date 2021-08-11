@@ -1,0 +1,287 @@
+body{
+	background: #f3f3f3;
+	font-family: 'Nunito Sans', sans-serif;
+	margin: 0%;
+}
+
+.first {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.back img {
+	width: 100%;
+	height: auto;
+}
+
+.day{
+	position: relative;
+	z-index: 6;
+}
+
+.night{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+h2{
+	color: white;
+	font-size: 5rem;
+	margin-top: 0;
+	text-shadow: 2px 25px 15px black; /*added shaddow*/
+}
+
+h3{
+	color: white;
+	font-size: 2.5rem;
+}
+
+h4 {
+	color: white;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.center{
+	position: absolute;
+	top: 30%;
+	left: 65%;
+	transform: translate(-30%, -30%);
+	z-index: 11;
+}
+
+input[type="checkbox"]
+{
+	position: relative;
+	width: 10rem;
+	height: 5rem;
+	-webkit-appearance: none;
+	background: #c6c6c6;
+	outline: none;
+	border-radius: 50px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .25);
+	transition: 1.5s;
+}
+
+input:checked[type="checkbox"]
+{
+	background: rgb(2, 251, 253);
+	box-shadow: 0 0 15px 15px rgba(11, 189, 189, .5);
+}
+
+
+input[type="checkbox"]::before
+{
+	content: '';
+	position: absolute;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50px;
+	top: 0%;
+	left: 0%;
+	background: #fff;
+	transform: scale(1.1);
+	box-shadow: 0 50px 35px rgba(0, 0, 0, .25);
+	transition: 1.0s;
+}
+
+input:checked[type="checkbox"]::before
+{
+	left: 5rem;
+}
+
+.mSwitch{
+	display:none;
+}
+
+/* ABOUT SECTION */
+
+.about {
+	position: relative;
+	background-color: rgb(108, 141, 115);
+	padding: 2em 4em;
+	border-top: 15px solid #cca300;
+	text-align: center;
+}
+
+.icon {
+	padding: 1em;
+}
+
+.icon img {
+	color: white;
+}
+
+#abouthead{
+	text-align: center;
+	margin-top: 0px;
+}
+
+.icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.led  {
+	width: 23%;
+}
+
+
+/* PRODUCTS SECTION */
+
+
+.box3 {
+	/* padding: 2em 4em; */
+	background-color: darkgray;
+	text-align: center;
+}
+
+.products {
+	width: 100vw;
+	max-width: 1500px;
+	align-content: center;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+}
+
+.lightLED {
+	margin: 0 auto;
+	flex-basis: 50%;
+}
+
+.lightLED p {
+	margin: 2rem 5rem;
+}
+
+
+#led img {
+	width: 20rem;
+	height: auto;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+	
+	h2{
+		font-size: 3rem;
+		margin-top: 0;
+	}
+	
+	h3{
+		font-size: 1.5rem;
+	}
+
+	h4 {
+		font-size: 1rem;
+		margin: 2rem 2rem;
+	}
+	
+	.icons {
+		flex-wrap: wrap;
+	}
+
+	.icon {
+		width: 40%;
+	}
+
+	.lightLED {
+		height: 40%;
+	}
+}
+
+@media screen and (max-width: 800px){
+
+.center{
+	display: none;
+}
+
+.mSwitch {
+	display: block;
+	background: darkgoldenrod;
+	text-align: center;
+	padding: 2rem;
+}
+
+	input[type="checkbox"]
+{
+	position: relative;
+	width: 6rem;
+	height: 3rem;
+	-webkit-appearance: none;
+	background: #c6c6c6;
+	outline: none;
+	border-radius: 50px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .25);
+	transition: 1.5s;
+}
+
+input:checked[type="checkbox"]
+{
+	background: rgb(2, 251, 253);
+	box-shadow: 0 0 15px 15px rgba(11, 189, 189, .5);
+}
+
+
+input[type="checkbox"]::before
+{
+	content: '';
+	position: absolute;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50px;
+	top: 0%;
+	left: 0%;
+	background: #fff;
+	transform: scale(1.1);
+	box-shadow: 0 50px 35px rgba(0, 0, 0, .25);
+	transition: 1.0s;
+}
+
+input:checked[type="checkbox"]::before
+{
+	left: 3rem;
+}
+
+.products {
+	display: flex;
+	flex-flow: column;
+}
+
+#timer img{
+	width: 60%;
+}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.center{
+		position: absolute;
+		z-index: 11;
+	}
+
+	.icons {
+		flex-wrap: wrap;
+	}
+
+	.icon {
+		width: 90%;
+	}
+
+	#ledtop {
+		padding: 2rem;
+	}
+
+	.lightLED {
+		width: 90%;
+		margin: 0 auto;	
+}
+
+}

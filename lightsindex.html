@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lights</title>
+    <link rel="stylesheet" href="lightstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.lights').on('click', function (){
+            $('.day').fadeToggle(3000);
+            $('.first').height($('.night').outerHeight());
+        });
+    });
+</script>
+
+
+</head>
+<body>
+<div class="first">
+    <div class="back">
+        <img src='newlight.jpg' alt="stairs day" class="day">
+        <img src="newdark.jpg" alt="stairs night" class="night">
+    </div>
+
+    <div class="center">
+        <h2 class="hud">Even Better in the Dark</h2>
+        <h3>Bring your landscape to life with LightMaster Landscape Lighting.</h3>
+        <input type="checkbox" name="lights" class="lights">
+    </div>
+</div>
+
+<div class="mSwitch">
+    <h2 class="hud">Even Better in the Dark</h2>
+    <h3>Bring your landscape to life with LightMaster Landscape Lighting.</h3>
+    <input type="checkbox" name="lights" class="lights">
+</div>
+
+<div class="about">
+    <h2 class="hud" id="abouthead">Elegance Meets Strength</h2>
+    <div class="icons">
+        <div class="icon led">
+            <img src="bulb.png" alt="bulb" id="bulb">
+            <h4>CREE LED Bulbs</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+        <div class="icon led">
+            <img src="bulb.png" alt="bulb" id="aluminum">
+            <h4>Durable aluminum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+        <div class="icon led">
+            <img src="bulb.png" alt="bulb" id="wiring">
+            <h4>Underground Wiring</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+        <div class="icon led">
+            <img src="bulb.png" alt="bulb" id="colors">
+            <h4>Beautiful Finish</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="box3">
+    <h2 class="hud" id="ledtop">Lights for Every Occassion</h2>
+    <h4>Our lights are not meant to stick out, but bring the focus where it belongs: on the landscape.</h4>
+    <div class="products">
+        <div class="lightLED" id="led">
+            <img src="pagotaoff.png" alt="bulb" id="led86701" onmouseover="this.src='pagotaon.png'" onmouseout="this.src='pagotaoff.png'">
+            <h4>Pagota</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+        <div class="lightLED">
+            <img src="lightoff2.png" alt="bulb" id="led05231" onmouseover="this.src='lighton2.png'" onmouseout="this.src='lightoff2.png'">
+            <h4>Mushroom</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+        <div class="lightLED">
+            <img src="blackspotoff.png" alt="bulb" id="blackspot" onmouseover="this.src='blackspoton.png'" onmouseout="this.src='blackspotoff.png'">
+            <h4>Wide Spot</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+        <div class="lightLED">
+            <img src="bronzespotoff.png" alt="bulb" id="bronzespot" onmouseover="this.src='bronzespoton.png'" onmouseout="this.src='bronzespotoff.png'">
+            <h4>Narrow Spot</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+        <div class="lightLED" id="timer">
+            <img src="timer.png" alt="bulb" >
+            <h4>Timer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+        <div class="lightLED" id="motion">
+            <img src="motion.png" alt="bulb">
+            <h4>Motion Sensor</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit illum consequatur placeat voluptatum quae saepe ex, est deleniti veniam eligendi maxime deserunt, nihil blanditiis!</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+
